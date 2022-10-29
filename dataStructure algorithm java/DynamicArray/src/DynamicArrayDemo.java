@@ -82,14 +82,14 @@ System.out.println("enter the value:");
 	}
 	
 	public void deleteEnd() {
-		int pos=size-1;
-		for(int i=pos+1;i<size;i++) {
-			arr[i-1]=arr[i];
-		}
+//		int pos=size-1;
+//		for(int i=pos+1;i<=size;i++) {
+//			arr[i-1]=arr[i];
+//		}
 		size--;
-		if(capacity>intialCapacity && capacity>3* size) {
-			shrinkArray();
-		}
+	if(capacity>intialCapacity && capacity>3* size) {
+		shrinkArray();
+	}
 	}
 	
 	public void deleteFirst() {
